@@ -6,25 +6,26 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 
 import static org.hamcrest.Matchers.equalTo;
 
-public class GetOrderUserTest extends UserMethod {
+public class GetOrderUserTest  {
     String accessToken = "";
     String email;
     User user;
-    ArrayList<String> ingredients = new ArrayList<>();
+    IngredientList ingredients = new IngredientList();
+
     @Before
     public void setUp(){
         user = User.getRandomUser();
-        accessToken = createUser(user).then().extract().path("accessToken");
+        accessToken = UserMethod.createUser(user).then().extract().path("accessToken");
         email = user.getEmail();
-        OrderMethod.createOrder(accessToken,"{\"ingredients\": \""+OrderMethod.getIngredients()+"\"}");
+        ingredients.setIngredients(OrderMethod.getIngredients());
+        OrderMethod.createOrder(accessToken,ingredients);
     }
     @After
     public void teardown() {
-        deleteUser(accessToken);
+        UserMethod.deleteUser(accessToken);
     }
 
     @Test

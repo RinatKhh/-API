@@ -15,7 +15,7 @@ public class ApiSetting {
     static final String ORDER= "api/orders";
     static final String INGREDIENTS = "api/ingredients";
     protected static RequestSpecification getSpec() {
-        return given()
+        return given().log().all()
                 .header("Content-Type", "application/json")
                 .baseUri(BASE_URL);
     }
