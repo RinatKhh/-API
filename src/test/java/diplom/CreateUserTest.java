@@ -29,10 +29,10 @@ public class CreateUserTest {
     @Description("Basic test for create User")
     public void createNewUserAndReturnTrue(){
         Response response =UserMethod.createUser(user);
+        accessToken = response.then().extract().path("accessToken");
         response.then().log().all().assertThat()
         .body("success", equalTo(true))
         .statusCode(200);
-        accessToken = response.then().extract().path("accessToken");
 
     }
     // нельзя создать двух одинаковых курьеров;
@@ -46,8 +46,9 @@ public class CreateUserTest {
                 .assertThat()
                 .body("message", equalTo("User already exists"))
                 .statusCode(403);
-        accessToken = response.then().extract().path("accessToken");
+
     }
+
     // без email
     @Test
     @DisplayName("Check create  User without email return Error")
@@ -55,11 +56,11 @@ public class CreateUserTest {
     public void createNewUserWithoutEmailReturnError() {
         user = User.getWithoutEmailUser();
         Response response = UserMethod.createUser(user);
+        accessToken = response.then().extract().path("accessToken");
         response.then().log().all()
                 .assertThat()
                 .body("message", equalTo("Email, password and name are required fields"))
                 .statusCode(403);
-        accessToken = response.then().extract().path("accessToken");
     }
     //без пароля
     @Test
@@ -68,11 +69,11 @@ public class CreateUserTest {
     public void createNewUserWithoutPasswordReturnError() {
         user = User.getWithoutPasswordUser();
         Response response = UserMethod.createUser(user);
+        accessToken = response.then().extract().path("accessToken");
         response.then().log().all()
                 .assertThat()
                 .body("message", equalTo("Email, password and name are required fields"))
                 .statusCode(403);
-        accessToken = response.then().extract().path("accessToken");
     }
     //без имени
     @Test
@@ -81,10 +82,10 @@ public class CreateUserTest {
     public void createNewUserWithoutNameReturnError() {
         user = User.getWithoutNameUser();
         Response response =UserMethod.createUser(user);
+        accessToken = response.then().extract().path("accessToken");
         response.then().log().all()
                 .assertThat()
                 .body("message", equalTo("Email, password and name are required fields"))
                 .statusCode(403);
-        accessToken = response.then().extract().path("accessToken");
     }
 }
