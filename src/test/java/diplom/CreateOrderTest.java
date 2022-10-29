@@ -25,7 +25,7 @@ public class CreateOrderTest {
     }
     @After
     public void teardown() {
-        UserMethod.DeleteUser(accessToken);
+        UserMethod.deleteUser(accessToken);
     }
     @Test
     @DisplayName("Check create new Order with Authorization And Ingredients")

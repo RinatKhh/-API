@@ -24,7 +24,7 @@ public class GetOrderUserTest extends UserMethod {
     }
     @After
     public void teardown() {
-        DeleteUser(accessToken);
+        deleteUser(accessToken);
     }
 
     @Test

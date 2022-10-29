@@ -22,7 +22,7 @@ public class SignInUserTest{
     }
     @After
     public void teardown() {
-        UserMethod.DeleteUser(accessToken);
+        UserMethod.deleteUser(accessToken);
     }
 
     @Test
@@ -30,7 +30,7 @@ public class SignInUserTest{
     @Description("Basic test to check access to the system")
     public void checkUserCanSigInTrue() {
         user = new User(email,password);
-        UserMethod.SigInUser(user)
+        UserMethod.sigInUser(user)
                  .then()
                  .assertThat()
                  .body("success", equalTo(true))
@@ -41,7 +41,7 @@ public class SignInUserTest{
     @Description("the system will return an error if the login and password is incorrect")
     public void checkWithIncorrectEmailPasswordReturnError() {
         User user_error = new User("test"+email,"test"+password);
-        UserMethod.SigInUser(user_error)
+        UserMethod.sigInUser(user_error)
                 .then()
                 .assertThat()
                 .body("message", equalTo("email or password are incorrect"))

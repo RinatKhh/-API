@@ -21,7 +21,7 @@ public class CreateUserTest {
     @After
     public void teardown() {
         if (accessToken!=null) {
-            UserMethod.DeleteUser(accessToken);
+            UserMethod.deleteUser(accessToken);
         }
     }
     @Test

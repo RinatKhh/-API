@@ -21,14 +21,14 @@ public class ChangeDataUserTest{
     }
     @After
     public void teardown() {
-        UserMethod.DeleteUser(accessToken);
+        UserMethod.deleteUser(accessToken);
     }
 
     @Test
     @DisplayName("Check change user data with authorization")
     public void checkChangeUserDataWithAuthorizationTrue(){
         user = new User(email,name);
-        UserMethod.ChangDataUser(accessToken,user)
+        UserMethod.changDataUser(accessToken,user)
                 .then().log().all()
                 .assertThat()
                 .body("success", equalTo(true))
@@ -38,7 +38,7 @@ public class ChangeDataUserTest{
     @DisplayName("Check change user data without authorization")
     public void checkChangeUserDataWithoutAuthorizationFalse(){
         user = new User("new"+email,name);
-        UserMethod.ChangDataUser("",user)
+        UserMethod.changDataUser("",user)
                 .then().log().all()
                 .assertThat()
                 .body("success", equalTo(false))
