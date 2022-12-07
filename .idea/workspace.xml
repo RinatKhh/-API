@@ -1,24 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dbc30c3-0460-4248-a0f6-81f0e474475c" name="Changes" comment="" />
+    <list default="true" id="1dbc30c3-0460-4248-a0f6-81f0e474475c" name="Changes" comment="ver 1.2 move up accessToken">
+      <change afterPath="$PROJECT_DIR$/src/main/java/diplom/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/diplom/ApiSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/diplom/ApiSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/diplom/OrderMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/diplom/OrderMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/diplom/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/diplom/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/diplom/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/diplom/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/diplom/GetOrderUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/diplom/GetOrderUserTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2GluO3dDyBDtDQu8e2WEIntwYbG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/yandex_praktikum/Diplom/Diplom_3"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\yandex_praktikum\Diplom\Diplom_2" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test  allure:serve" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CreateOrderTest">
+    <configuration name="CreateOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="diplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="diplom" />
+      <option name="MAIN_CLASS_NAME" value="diplom.CreateOrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateOrderTest.createNewOrderWithAuthorizationAndIncorrectIngredientsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="diplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="diplom" />
+      <option name="MAIN_CLASS_NAME" value="diplom.CreateOrderTest" />
+      <option name="METHOD_NAME" value="createNewOrderWithAuthorizationAndIncorrectIngredientsFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateOrderTest.createNewOrderWithAuthorizationAndIngredientsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="diplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="diplom" />
+      <option name="MAIN_CLASS_NAME" value="diplom.CreateOrderTest" />
+      <option name="METHOD_NAME" value="createNewOrderWithAuthorizationAndIngredientsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateOrderTest.createNewOrderWithoutAuthorizationAndNotIngredientsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="diplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="diplom" />
+      <option name="MAIN_CLASS_NAME" value="diplom.CreateOrderTest" />
+      <option name="METHOD_NAME" value="createNewOrderWithoutAuthorizationAndNotIngredientsFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetOrderUserTest.GetOrderWithAuthorizationTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="diplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="diplom" />
+      <option name="MAIN_CLASS_NAME" value="diplom.GetOrderUserTest" />
+      <option name="METHOD_NAME" value="GetOrderWithAuthorizationTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CreateOrderTest" />
+        <item itemvalue="JUnit.CreateOrderTest.createNewOrderWithoutAuthorizationAndNotIngredientsFalse" />
+        <item itemvalue="JUnit.CreateOrderTest.createNewOrderWithAuthorizationAndIncorrectIngredientsFalse" />
+        <item itemvalue="JUnit.CreateOrderTest.createNewOrderWithAuthorizationAndIngredientsTrue" />
+        <item itemvalue="JUnit.GetOrderUserTest.GetOrderWithAuthorizationTrue" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,6 +163,54 @@
       <option name="presentableId" value="Default" />
       <updated>1666975457317</updated>
     </task>
+    <task id="LOCAL-00001" summary="add all test">
+      <created>1666975829723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666975829723</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add allure report">
+      <created>1666976459086</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976459086</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ver 1.2 edit method name">
+      <created>1667022810093</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667022810093</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ver 1.2 move up accessToken">
+      <created>1667023666391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667023666391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add all test" />
+    <MESSAGE value="add allure report" />
+    <MESSAGE value="ver 1.2 edit method name" />
+    <MESSAGE value="ver 1.2 move up accessToken" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver 1.2 move up accessToken" />
   </component>
 </project>
